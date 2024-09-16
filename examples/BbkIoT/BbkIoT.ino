@@ -69,7 +69,8 @@ void setup() {
   String ip = WiFi.localIP().toString();
   Serial.printf("[SETUP] WiFi Connected %s\n", ip.c_str());
 
-  bbkIoTBegin(onConnected, onDisconnected, jsonObjectHandler, "es key goes here");
+  bbkIoTBegin(onConnected, onDisconnected, 
+    jsonObjectHandler, "es key goes here");
 
   booleanVar = false;
   number = 0;
