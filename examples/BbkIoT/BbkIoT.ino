@@ -1,14 +1,13 @@
 /*
-  v0.955
+  v0.985
   BbkIoT
 
   Uses BBK IoT library to connect to IoT server and exchange data with mobile app
   https://play.google.com/store/apps/details?id=com.bbk.iot
 
   !!!!!!!!!!!!!!!!!!!!!!!!!!! IMPORTANT NOTICE !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    - Download and install WebSocketsClient library from 
-      https://github.com/Links2004/arduinoWebSockets (Library Manager: WebSockets by Markus Sattler)
-    - Use ArduinoJson library https://arduinojson.org/
+    - Library Manager -> install WebSockets by Markus Sattler
+    - Library Manager -> install ArduinoJson by Benoit Blanchon
   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
 
