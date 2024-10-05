@@ -1,5 +1,5 @@
 /*
-  v0.985
+  v1.000
   BbkIoT.cpp - Library for connecting to BBK IoT server.
   Created by Ehab Ahmad, September 15, 2024.
 */
@@ -47,7 +47,7 @@ void bbkIoTSocketIOEvent(socketIOmessageType_t type, uint8_t* payload, size_t le
       bbkIoTSendDataToServer("dummy", 0);
       break;
     case sIOtype_EVENT:
-      Serial.printf("[IOc] get event: %s\n", payload);
+      // Serial.printf("[IOc] get event: %s\n", payload);
       bbkIoTHandleIncomingMessage(payload);
       break;
     case sIOtype_ACK:
@@ -86,8 +86,8 @@ void bbkIoTHandleIncomingMessage(uint8_t* payload) {
     return;
   } else if (messageKey == "messageToES") {
     String jsonStr = doc[1];
-    Serial.println(messageKey);
-    Serial.println(jsonStr);
+    // Serial.println(messageKey);
+    // Serial.println(jsonStr);
 
     error = deserializeJson(doc, jsonStr);
     JsonObject jsonObject = doc.as<JsonObject>();
@@ -165,7 +165,7 @@ void bbkIoTSendMessage() {
   bbkIoTSendEvent(messageStr);
 
   // Print JSON for debugging
-  Serial.println(messageStr);
+  // Serial.println(messageStr);
 }
 
 void bbkIoTLoop() {
