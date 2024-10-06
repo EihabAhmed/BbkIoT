@@ -1,5 +1,5 @@
 /*
-  v1.000
+  v1.001
   BbkIoT
 
   Uses BBK IoT library to connect to IoT server and exchange data with mobile app
@@ -34,7 +34,15 @@ void onDisconnected() {
 }
 
 void jsonObjectHandler(JsonObject jsonObject) {
-  if (jsonObject["property"] == "MobileToEs") {
+  String property = "MobileToEs";
+  property.toLowerCase();
+  property.trim();
+
+  String incomingProperty = jsonObject["property"];
+  incomingProperty.toLowerCase();
+  incomingProperty.trim();
+
+  if (incomingProperty == property) {
     int value = jsonObject["value"];
     bool ledOff = value % 5 != 0;
     digitalWrite(LED_BUILTIN, ledOff);

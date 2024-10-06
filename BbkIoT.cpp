@@ -1,5 +1,5 @@
 /*
-  v1.000
+  v1.001
   BbkIoT.cpp - Library for connecting to BBK IoT server.
   Created by Ehab Ahmad, September 15, 2024.
 */
