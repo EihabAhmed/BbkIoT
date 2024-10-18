@@ -19,7 +19,7 @@
 ESP8266WiFiMulti WiFiMulti;
 
 /*******************************************************************************/
-/***** Custom properties - change these properties as need in your program *****/
+/**** Custom properties - change these properties as needed in your program ****/
 /*******************************************************************************/
 bool booleanVar;
 int number;
