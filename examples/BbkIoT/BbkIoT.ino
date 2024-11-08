@@ -50,12 +50,12 @@ void jsonObjectHandler(JsonObject jsonObject) {
   property.toLowerCase();
   property.trim();
 
-  String incomingProperty = jsonObject["property"];
+  String incomingProperty = jsonObject["property"]; // Don't change the key "property"!!
   incomingProperty.toLowerCase();
   incomingProperty.trim();
 
   if (incomingProperty == property) {
-    int value = jsonObject["value"];
+    int value = jsonObject["value"]; // Don't change the key "value"!!
     bool ledOff = value % 5 != 0;
     digitalWrite(LED_BUILTIN, ledOff);
   }
