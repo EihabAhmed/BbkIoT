@@ -1,5 +1,5 @@
 /*
-  v1.001
+  v1.1
   BbkIoT
 
   Uses BBK IoT library to connect to IoT server and exchange data with mobile app
@@ -43,7 +43,7 @@ void jsonObjectHandler(JsonObject jsonObject) {
 /*******************************************************************************/
 /* Property name - change to match the property name in the mobile application */
 /*******************************************************************************/
-  String property = "MobileToEs";
+  String property = "MobileToEs1";
 /*******************************************************************************/
 /******************************** Property name ********************************/
 /*******************************************************************************/
