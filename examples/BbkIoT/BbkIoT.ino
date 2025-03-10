@@ -1,5 +1,5 @@
 /*
-  v1.1
+  v1.11
   BbkIoT
 
   Uses BBK IoT library to connect to IoT server and exchange data with mobile app
